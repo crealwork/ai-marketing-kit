@@ -106,7 +106,7 @@ Everything via environment variables — never write keys into files.
 
 ## About the maker
 
-**Dan Jeong** — marketer and founder, 11 years in, Lovable ambassador. Currently building [Sundayable](https://www.sundayable.com), an AI startup rebuilding every step of marketing with AI. This kit is the toolset he actually runs, every week.
+**Dan Jeong** — marketer and founder, 11 years in, Lovable ambassador. Currently building [Sundayable](https://www.sundayable.com), an AI startup rebuilding every step of marketing with AI. This kit is simply a collection of what I use at work.
 
 ## Thanks
 

@@ -106,7 +106,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 ## 关于作者
 
-**Dan Jeong** — 11 年经验的营销人兼创业者，Lovable 大使。目前在打造 AI 创业公司 [Sundayable](https://www.sundayable.com)，用 AI 重塑营销的每个环节 — 这套工具就是他每周实际在用的。
+**Dan Jeong** — 11 年经验的营销人兼创业者，Lovable 大使。目前在打造 AI 创业公司 [Sundayable](https://www.sundayable.com)，用 AI 重塑营销的每个环节 — 这套工具就是我把自己工作中在用的东西整理而成的。
 
 ## 致谢
 

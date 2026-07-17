@@ -106,7 +106,7 @@ Todo por variables de entorno — nunca escribas claves en archivos.
 
 ## Sobre el creador
 
-**Dan Jeong** — marketer y fundador con 11 años de experiencia, embajador de Lovable. Hoy construye [Sundayable](https://www.sundayable.com), una startup de IA que reinventa cada paso del marketing con IA — este kit es el que usa cada semana.
+**Dan Jeong** — marketer y fundador con 11 años de experiencia, embajador de Lovable. Hoy construye [Sundayable](https://www.sundayable.com), una startup de IA que reinventa cada paso del marketing con IA — este kit es, simplemente, lo que uso en mi trabajo.
 
 ## Gracias
 
