@@ -17,7 +17,7 @@ description: Use when making a short paid-ad or promo VIDEO (15–60s) that comb
 **1. 브리프 (한 번에).** 무엇을 파는가(제품/URL), 타깃 플레이스먼트(Reels/TikTok
 9:16, 피드 1:1, YouTube 16:9), 길이(기본 30s, 범위 15–60s), 훅 후보, 브랜드 토큰
 (DESIGN.md — 없으면 brand-guide 먼저), CTA. **광고 집행까지 갈 거면 예산/기간은
-zernio-ads 게이트에서** — 이 스킬은 제작만.
+paid-ads 게이트에서** — 이 스킬은 제작만.
 
 **2. 라우팅 (hyperframes 규칙 준수).**
 - 제품/사이트가 있으면 → `/product-launch-video` (사이트 캡처 + 브랜드 토큰)
@@ -47,5 +47,5 @@ zernio-ads 게이트에서** — 이 스킬은 제작만.
 - 렌더 후 프레임 추출 READ: 첫 프레임/훅 카피/CTA/엔드카드 4장 육안 검증
 
 **6. 핸드오프.** 변형 세트 + 각 변형의 축 설명 한 줄 → 유저 승인 → 집행은
-**zernio-ads**(예산 게이트), 오가닉 게시는 **zernio-social**. 24–48h 후 성과로
+**paid-ads**(예산 게이트), 오가닉 게시는 **organic-social**. 24–48h 후 성과로
 진 변형 끄고 이긴 축으로 다음 세트.

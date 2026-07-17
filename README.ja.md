@@ -68,8 +68,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **配信 · 広告 · リード**
 | スキル | できること |
 |---|---|
-| **zernio-social** | Zernio でマルチプラットフォームのオーガニック投稿/予約 — カレンダー、メディアアップロード、公開承認ゲート |
-| **zernio-ads** | 7プラットフォームの有料広告 — ブースト/キャンペーン/オーディエンス/分析、予算承認ゲート、A/Bクリエイティブ内蔵 |
+| **organic-social** | Zernio でマルチプラットフォームのオーガニック投稿/予約 — カレンダー、メディアアップロード、公開承認ゲート |
+| **paid-ads** | 7プラットフォームの有料広告 — ブースト/キャンペーン/オーディエンス/分析、予算承認ゲート、A/Bクリエイティブ内蔵 |
 | **e-blast-newsletter** | Resend 無料枠（月3,000通）でトランザクション+ニュースレター — 配信停止リンク必須、件名A/B |
 | **b2b-cold-email** | Instantly.ai のコールドメールキャンペーン、シーケンス、リード登録 |
 | **lead-magnet** | ブレスト → 実物のリードマグネット制作 → Google Sheets リードDB |
@@ -92,7 +92,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | e-blast-newsletter | `RESEND_API_KEY`（無料） |
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 接続するCRMのキー（スキルが案内） |
-| zernio-social / zernio-ads | `ZERNIO_API_KEY` |
+| organic-social / paid-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` または `GEMINI_API_KEY` |
 | cyrano（配信チャネル） | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 

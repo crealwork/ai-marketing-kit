@@ -68,8 +68,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **发布 · 广告 · 线索**
 | 技能 | 功能 |
 |---|---|
-| **zernio-social** | 通过 Zernio 多平台自然发布/排期 — 内容日历、媒体上传、发布审批门 |
-| **zernio-ads** | 7 大平台付费广告 — 加热/campaign/受众/分析，预算审批门，内置 A/B 素材 |
+| **organic-social** | 通过 Zernio 多平台自然发布/排期 — 内容日历、媒体上传、发布审批门 |
+| **paid-ads** | 7 大平台付费广告 — 加热/campaign/受众/分析，预算审批门，内置 A/B 素材 |
 | **e-blast-newsletter** | Resend 免费档（每月 3,000 封）事务邮件 + Newsletter — 强制退订链接、标题 A/B |
 | **b2b-cold-email** | Instantly.ai 冷邮件 campaign、序列、线索上传 |
 | **lead-magnet** | 头脑风暴 → 制作实物引流磁铁 → Google Sheets 线索库 |
@@ -92,7 +92,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | e-blast-newsletter | `RESEND_API_KEY`（免费） |
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 所连 CRM 的密钥（技能会引导你） |
-| zernio-social / zernio-ads | `ZERNIO_API_KEY` |
+| organic-social / paid-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` 或 `GEMINI_API_KEY` |
 | cyrano（送达渠道） | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 

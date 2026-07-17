@@ -1,6 +1,6 @@
 ---
-name: zernio-social
-description: Use when publishing or scheduling ORGANIC social media posts via Zernio — one post to multiple platforms (YouTube, Instagram, TikTok, LinkedIn, Facebook, X, Pinterest, Threads), content calendars, media upload, or automating a posting cadence. Triggers: "이 포스트 올려줘", "스케줄해줘", "인스타랑 유튜브에 같이 올려줘", "포스팅 자동화", "content calendar", "schedule this post", "cross-post". Paid promotion → zernio-ads. 발행 승인 없는 자동 게시는 금지.
+name: organic-social
+description: Use when publishing or scheduling ORGANIC social media posts via Zernio — one post to multiple platforms (YouTube, Instagram, TikTok, LinkedIn, Facebook, X, Pinterest, Threads), content calendars, media upload, or automating a posting cadence. Triggers: "이 포스트 올려줘", "스케줄해줘", "인스타랑 유튜브에 같이 올려줘", "포스팅 자동화", "content calendar", "schedule this post", "cross-post". Paid promotion → paid-ads. 발행 승인 없는 자동 게시는 금지.
 ---
 
 # Zernio Social
@@ -71,7 +71,7 @@ POST /posts
 - **배치 스케줄**: N개 콘텐츠 → 승인된 캘린더(날짜×플랫폼 표)를 유저에게 확인받고
   → 포스트별 생성 → 생성 후 `GET /posts`로 전체 스케줄 재조회해 표로 보고.
 - **리퍼포즈 연계**: 플랫폼 간 변환은 content-repurpose 스킬로 재작성 후 이
-  스킬로 발행. 유료 부스트는 zernio-ads로.
+  스킬로 발행. 유료 부스트는 paid-ads로.
 - 발행 카피 기준: 제목 낚시 금지, 이모지 벽 금지, 해시태그 플랫폼 관행에 맞게
   (셀프체크: humanizer 스킬).
 

@@ -1,13 +1,13 @@
 ---
 name: seo-geo-setup
-description: Use when registering a site with search engines (Google Search Console, Naver, Bing, Daum, Pinterest), optimizing for AI search engines / GEO (ChatGPT, Perplexity, Gemini, Copilot citations, llms.txt, AI crawler access), or setting up local SEO (Google Business Profile, Naver Place, Kakao Maps, Yelp). Triggers: "SEO 세팅", "검색엔진 등록해줘", "서치콘솔", "네이버 웹마스터", "GEO", "AI 검색에 뜨게 해줘", "챗GPT가 우리를 인용 안 해", "llms.txt", "로컬 SEO", "플레이스 최적화", "구글에 안 떠요". Head 태그/OG → publish-checklist, GA4/GTM → analytics-setup, 광고 → zernio-ads.
+description: Use when registering a site with search engines (Google Search Console, Naver, Bing, Daum, Pinterest), optimizing for AI search engines / GEO (ChatGPT, Perplexity, Gemini, Copilot citations, llms.txt, AI crawler access), or setting up local SEO (Google Business Profile, Naver Place, Kakao Maps, Yelp). Triggers: "SEO 세팅", "검색엔진 등록해줘", "서치콘솔", "네이버 웹마스터", "GEO", "AI 검색에 뜨게 해줘", "챗GPT가 우리를 인용 안 해", "llms.txt", "로컬 SEO", "플레이스 최적화", "구글에 안 떠요". Head 태그/OG → publish-checklist, GA4/GTM → analytics-setup, 광고 → paid-ads.
 ---
 
 # SEO / GEO Setup
 
 사이트를 **검색엔진(글로벌+한국) + AI 검색(ChatGPT·Perplexity·Gemini·Copilot)**
 전 채널에 뜨게 만들고 로컬 노출까지 잡는 체크리스트 스킬. 측정(analytics-setup),
-퍼블리시 최적화(publish-checklist), 광고(zernio-ads)는 각자 스킬로 — 이 스킬은
+퍼블리시 최적화(publish-checklist), 광고(paid-ads)는 각자 스킬로 — 이 스킬은
 "검색과 AI 답변에 존재하게 만드는 것"만 담당한다.
 
 ## Gates
@@ -30,7 +30,7 @@ llms.txt 배포, 인용되기 좋은 콘텐츠 구조(직답+숫자+FAQ), JSON-L
 GBP 리뷰 전략(GEO 겸용), Naver Place 대표 키워드 5종 조합, Kakao, Yelp.
 
 **다음 단계 핸드오프**: 등록이 끝나면 측정(analytics-setup — GSC↔GA4 연결,
-AI Search 채널 포함) → 필요 시 광고(zernio-ads).
+AI Search 채널 포함) → 필요 시 광고(paid-ads).
 
 ## Hard rules
 
@@ -52,7 +52,7 @@ AI Search 채널 포함) → 필요 시 광고(zernio-ads).
 | 로컬 SEO (GBP·Naver Place·Kakao·Yelp) | references/LOCAL.md |
 | head 태그/favicon/OG | `publish-checklist` 스킬 |
 | GA4/GTM/Clarity 측정 + AI Search 채널 | `analytics-setup` 스킬 |
-| 유료 광고 집행 | `zernio-ads` 스킬 |
+| 유료 광고 집행 | `paid-ads` 스킬 |
 
 ## Thanks
 

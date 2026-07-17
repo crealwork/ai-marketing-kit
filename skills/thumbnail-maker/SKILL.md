@@ -30,7 +30,7 @@ description: Use when making video thumbnails — YouTube longform (1280×720), 
 
 | 대상 | 크기 | 비고 |
 |---|---|---|
-| YouTube 롱폼 | 1280×720 (16:9), <2MB | 업로드는 zernio-social의 mediaItems[].thumbnail |
+| YouTube 롱폼 | 1280×720 (16:9), <2MB | 업로드는 organic-social의 mediaItems[].thumbnail |
 | Shorts/Reels 커버 | 1080×1920 | 첫 프레임 룰 우선 — 커버는 IG 그리드 1:1 센터 크롭 안전영역(y 420–1500) 고려 |
 | 커뮤니티/배너 | 용도별 | image-gen으로 라우팅 |
 

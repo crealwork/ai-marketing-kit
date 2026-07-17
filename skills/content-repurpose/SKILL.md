@@ -1,6 +1,6 @@
 ---
 name: content-repurpose
-description: Use when adapting a post from one social platform to another — Threads → LinkedIn, LinkedIn → Threads, X → LinkedIn, a blog section → social posts — and optionally publishing via Zernio. Triggers: "이 스레드 글 링크드인용으로", "링크드인 글 스레드로 바꿔줘", "리퍼포즈해줘", "repurpose this post", "cross-post this", "turn this thread into a LinkedIn post". 원문 그대로 복붙 크로스포스팅에는 쓰지 않는다 — 그건 zernio-social로 바로.
+description: Use when adapting a post from one social platform to another — Threads → LinkedIn, LinkedIn → Threads, X → LinkedIn, a blog section → social posts — and optionally publishing via Zernio. Triggers: "이 스레드 글 링크드인용으로", "링크드인 글 스레드로 바꿔줘", "리퍼포즈해줘", "repurpose this post", "cross-post this", "turn this thread into a LinkedIn post". 원문 그대로 복붙 크로스포스팅에는 쓰지 않는다 — 그건 organic-social로 바로.
 ---
 
 # Content Repurpose
@@ -14,7 +14,7 @@ description: Use when adapting a post from one social platform to another — Th
 1. **원문 수집** — 유저가 준 텍스트/링크. 링크면 본문을 긁어온다.
 2. **코어 추출** — 핵심 주장 1개, 근거/사례, 훅으로 쓸 수 있는 문장, 숫자.
 3. **타깃 문법으로 재작성** (아래 표) + humanizer 룰 적용 (AI 티 제거).
-4. **유저 승인** — 변환본을 보여주고 확인. 발행/예약은 zernio-social로.
+4. **유저 승인** — 변환본을 보여주고 확인. 발행/예약은 organic-social로.
 
 ## 플랫폼 문법 (2026 기준)
 
@@ -46,4 +46,4 @@ description: Use when adapting a post from one social platform to another — Th
 원문 1개 → 변환 N개가 아니라, **원문 풀에서 주장 단위로 쪼개** 플랫폼별 캘린더에
 배치한다 (긴 글 1개 = Threads 체인 1 + LinkedIn 포스트 1 + 후속 짧은 포스트 2–3).
 같은 주장을 두 플랫폼에 올릴 땐 24시간 이상 간격. 캘린더 확정 후 발행은
-zernio-social의 배치 스케줄로.
+organic-social의 배치 스케줄로.

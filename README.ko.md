@@ -68,8 +68,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **발행 · 광고 · 리드**
 | 스킬 | 하는 일 |
 |---|---|
-| **zernio-social** | Zernio 멀티플랫폼 오가닉 발행/예약 — 캘린더, 미디어 업로드, 발행 게이트 |
-| **zernio-ads** | 유료 광고 7개 플랫폼 — 부스트/캠페인/오디언스/analytics, 예산 승인 게이트, A/B creative 내장 |
+| **organic-social** | Zernio 멀티플랫폼 오가닉 발행/예약 — 캘린더, 미디어 업로드, 발행 게이트 |
+| **paid-ads** | 유료 광고 7개 플랫폼 — 부스트/캠페인/오디언스/analytics, 예산 승인 게이트, A/B creative 내장 |
 | **e-blast-newsletter** | Resend 무료 티어(월 3,000통) 트랜잭셔널+뉴스레터 — 수신거부 링크 강제, 제목 A/B |
 | **b2b-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 |
 | **lead-magnet** | 브레인스토밍 → 실물 제작 → Google Sheets 리드 DB |
@@ -92,7 +92,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | e-blast-newsletter | `RESEND_API_KEY` (무료) |
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
-| zernio-social / zernio-ads | `ZERNIO_API_KEY` |
+| organic-social / paid-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` 또는 `GEMINI_API_KEY` |
 | cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 

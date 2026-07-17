@@ -10,7 +10,7 @@ FRAMES = {
         ("Make me a carousel", "carousel-generator", "research → branded design → PNG carousel"),
         ("Give me 4 thumbnails", "thumbnail-maker", "4 A/B variants · gpt-image-2 / Nano Banana"),
         ("Edit my webinar recording and publish it", "longform-to-content", "full edit + 4–8 Shorts + thumbnails + scheduling"),
-        ("Boost this post", "zernio-ads", "7 platforms · budget-approval gates · A/B creatives"),
+        ("Boost this post", "paid-ads", "7 platforms · budget-approval gates · A/B creatives"),
         ("Marketing is so hard", "dans-advice", "diagnose → real prescriptions → one action for today"),
     ],
     "zh": [
@@ -18,7 +18,7 @@ FRAMES = {
         ("做一组轮播图", "carousel-generator", "调研 → 品牌化设计 → PNG 轮播"),
         ("出 4 张缩略图", "thumbnail-maker", "4 个 A/B 变体 · gpt-image-2 / Nano Banana"),
         ("把研讨会录像剪辑后发布", "longform-to-content", "完整剪辑 + 4–8 条 Shorts + 缩略图 + 定时发布"),
-        ("给这条帖子加热", "zernio-ads", "7 大平台 · 预算审批门 · A/B 素材"),
+        ("给这条帖子加热", "paid-ads", "7 大平台 · 预算审批门 · A/B 素材"),
         ("营销太难了", "dans-advice", "诊断 → 务实处方 → 今天就做的一件事"),
     ],
     "es": [
@@ -26,7 +26,7 @@ FRAMES = {
         ("Hazme un carrusel", "carousel-generator", "investigación → diseño de marca → carrusel PNG"),
         ("Dame 4 miniaturas", "thumbnail-maker", "4 variantes A/B · gpt-image-2 / Nano Banana"),
         ("Edita mi webinar y publícalo", "longform-to-content", "edición completa + 4–8 Shorts + programación"),
-        ("Impulsa este post", "zernio-ads", "7 plataformas · aprobación de presupuesto · creatividades A/B"),
+        ("Impulsa este post", "paid-ads", "7 plataformas · aprobación de presupuesto · creatividades A/B"),
         ("El marketing es muy difícil", "dans-advice", "diagnóstico → recetas reales → una acción para hoy"),
     ],
     "pt": [
@@ -34,7 +34,7 @@ FRAMES = {
         ("Faça um carrossel", "carousel-generator", "pesquisa → design de marca → carrossel PNG"),
         ("Me dê 4 thumbnails", "thumbnail-maker", "4 variações A/B · gpt-image-2 / Nano Banana"),
         ("Edite meu webinar e publique", "longform-to-content", "edição completa + 4–8 Shorts + agendamento"),
-        ("Impulsione este post", "zernio-ads", "7 plataformas · aprovação de orçamento · criativos A/B"),
+        ("Impulsione este post", "paid-ads", "7 plataformas · aprovação de orçamento · criativos A/B"),
         ("Marketing é muito difícil", "dans-advice", "diagnóstico → receitas reais → uma ação para hoje"),
     ],
     "ja": [
@@ -42,7 +42,7 @@ FRAMES = {
         ("カルーセルを作って", "carousel-generator", "リサーチ → ブランドデザイン → PNGカルーセル"),
         ("サムネイルを4枚出して", "thumbnail-maker", "A/Bバリアント4種 · gpt-image-2 / Nano Banana"),
         ("ウェビナー録画を編集して公開して", "longform-to-content", "フル編集 + Shorts 4–8本 + 予約公開"),
-        ("この投稿をブーストして", "zernio-ads", "7プラットフォーム · 予算承認ゲート · A/Bクリエイティブ"),
+        ("この投稿をブーストして", "paid-ads", "7プラットフォーム · 予算承認ゲート · A/Bクリエイティブ"),
         ("マーケティングが難しすぎる", "dans-advice", "診断 → 現実的な処方 → 今日やること1つ"),
     ],
     "ko": [
@@ -50,7 +50,7 @@ FRAMES = {
         ("카드뉴스 만들어줘", "carousel-generator", "리서치 → 브랜드 디자인 → PNG 캐러셀"),
         ("썸네일 4개 뽑아줘", "thumbnail-maker", "A/B 변형 4종 · gpt-image-2 / Nano Banana"),
         ("웨비나 녹화 편집해서 올려줘", "longform-to-content", "풀편집 + 쇼츠 4–8개 + 썸네일 + 예약 발행"),
-        ("이 포스트 부스트해줘", "zernio-ads", "7개 플랫폼 · 예산 승인 게이트 · A/B creative"),
+        ("이 포스트 부스트해줘", "paid-ads", "7개 플랫폼 · 예산 승인 게이트 · A/B creative"),
         ("마케팅 너무 어려워", "dans-advice", "진단 → 현실 처방 → 오늘 할 일 딱 하나"),
     ],
 }

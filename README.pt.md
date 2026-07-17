@@ -68,8 +68,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **Publicação · Anúncios · Leads**
 | Skill | O que faz |
 |---|---|
-| **zernio-social** | Publicação/agendamento orgânico multiplataforma via Zernio — calendários, upload de mídia, portões de aprovação |
-| **zernio-ads** | Anúncios pagos em 7 plataformas — boost/campanhas/públicos/analytics, aprovação de orçamento, criativos A/B integrados |
+| **organic-social** | Publicação/agendamento orgânico multiplataforma via Zernio — calendários, upload de mídia, portões de aprovação |
+| **paid-ads** | Anúncios pagos em 7 plataformas — boost/campanhas/públicos/analytics, aprovação de orçamento, criativos A/B integrados |
 | **e-blast-newsletter** | Transacional + newsletters no plano grátis do Resend (3.000/mês) — link de descadastro obrigatório, assuntos em A/B |
 | **b2b-cold-email** | Campanhas de cold email no Instantly.ai, sequências, upload de leads |
 | **lead-magnet** | Brainstorm → construir a isca digital real → base de leads no Google Sheets |
@@ -92,7 +92,7 @@ Tudo via variáveis de ambiente — nunca escreva chaves em arquivos.
 | e-blast-newsletter | `RESEND_API_KEY` (grátis) |
 | b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | a chave do seu CRM (a skill orienta) |
-| zernio-social / zernio-ads | `ZERNIO_API_KEY` |
+| organic-social / paid-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` ou `GEMINI_API_KEY` |
 | cyrano (canal de entrega) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 

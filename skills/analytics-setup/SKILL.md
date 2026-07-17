@@ -1,6 +1,6 @@
 ---
 name: analytics-setup
-description: Use when setting up web analytics and measurement — GA4 property + GTM install, Microsoft Clarity, conversion/key events, UTM tagging, Google Ads / Search Console links, audiences, or the AI Search channel group. Triggers: "GA4 세팅해줘", "GTM 설치", "전환 추적 붙여줘", "UTM 어떻게", "애널리틱스 연결", "잠재고객 만들어줘", "set up GA4", "conversion tracking". 광고 집행 자체는 zernio-ads, 검색엔진 등록은 seo-setup.
+description: Use when setting up web analytics and measurement — GA4 property + GTM install, Microsoft Clarity, conversion/key events, UTM tagging, Google Ads / Search Console links, audiences, or the AI Search channel group. Triggers: "GA4 세팅해줘", "GTM 설치", "전환 추적 붙여줘", "UTM 어떻게", "애널리틱스 연결", "잠재고객 만들어줘", "set up GA4", "conversion tracking". 광고 집행 자체는 paid-ads, 검색엔진 등록은 seo-setup.
 ---
 
 # Analytics Setup
@@ -15,7 +15,7 @@ description: Use when setting up web analytics and measurement — GA4 property 
 6. 전환 이벤트는 자동 생성에 맡기지 말고 직접 지정 + 사람 검토.
 7. 검증은 눈으로: GA4 Realtime + GTM 미리보기 통과 후 게시.
 
-측정 없이 광고를 켜는 것 = 결과를 모르는 채로 돈을 쓰는 것. 유료 광고(zernio-ads 스킬)로 가기 전에 §1–§7이 완료돼 있어야 한다.
+측정 없이 광고를 켜는 것 = 결과를 모르는 채로 돈을 쓰는 것. 유료 광고(paid-ads 스킬)로 가기 전에 §1–§7이 완료돼 있어야 한다.
 
 ## 1. GA4 속성 + GTM 설치
 
