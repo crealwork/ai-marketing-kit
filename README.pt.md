@@ -46,7 +46,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **Conteúdo**
 | Skill | O que faz |
 |---|---|
-| **card-news-generator** | Carrosséis para Instagram/Threads — pesquisa → design de marca → PNG |
+| **carousel-generator** | Carrosséis para Instagram/Threads — pesquisa → design de marca → PNG |
 | **ppt-slide-generator** | Apresentações 16:9 — pesquisa + revisão dupla + entrega em PDF / Google Slides |
 | **print-design** | Cartazes, panfletos, faixas, cartões — entrevista → design → ciclo de QA rigoroso → PDF pronto para gráfica com fontes vetorizadas. **Somente modelos frontier** |
 | **brand-guide** | Extrai um sistema de marca mensurável (tokens + voz) de um site ou logo |
@@ -67,8 +67,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **zernio-social** | Publicação/agendamento orgânico multiplataforma via Zernio — calendários, upload de mídia, portões de aprovação |
 | **zernio-ads** | Anúncios pagos em 7 plataformas — boost/campanhas/públicos/analytics, aprovação de orçamento, criativos A/B integrados |
-| **resend-email** | Transacional + newsletters no plano grátis do Resend (3.000/mês) — link de descadastro obrigatório, assuntos em A/B |
-| **instantly-cold-email** | Campanhas de cold email no Instantly.ai, sequências, upload de leads |
+| **e-blast-newsletter** | Transacional + newsletters no plano grátis do Resend (3.000/mês) — link de descadastro obrigatório, assuntos em A/B |
+| **b2b-cold-email** | Campanhas de cold email no Instantly.ai, sequências, upload de leads |
 | **lead-magnet** | Brainstorm → construir a isca digital real → base de leads no Google Sheets |
 | **cyrano** | Briefings de pesquisa pré-reunião com fontes citadas (Slack/Telegram/email) |
 
@@ -86,8 +86,8 @@ Tudo via variáveis de ambiente — nunca escreva chaves em arquivos.
 
 | Skill | Variável |
 |---|---|
-| resend-email | `RESEND_API_KEY` (grátis) |
-| instantly-cold-email | `INSTANTLY_API_KEY` |
+| e-blast-newsletter | `RESEND_API_KEY` (grátis) |
+| b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | a chave do seu CRM (a skill orienta) |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` ou `GEMINI_API_KEY` |
@@ -105,7 +105,7 @@ Tudo via variáveis de ambiente — nunca escreva chaves em arquivos.
 
 - **AIMS** ([aim-squad.com](https://aim-squad.com)) — aprendemos muito com eles. Obrigado.
 - **cyrano** é um fork do [insane-search](https://github.com/fivetaku/insane-search) do GPTAKU. Obrigado.
-- Os presets do card-news-generator são exemplos de marcas reais — troque pela sua marca.
+- Os presets do carousel-generator são exemplos de marcas reais — troque pela sua marca.
 
 ## Licença
 

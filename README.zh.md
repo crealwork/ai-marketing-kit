@@ -46,7 +46,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **内容制作**
 | 技能 | 功能 |
 |---|---|
-| **card-news-generator** | Instagram/Threads 卡片轮播 — 调研 → 品牌化设计 → PNG |
+| **carousel-generator** | Instagram/Threads 卡片轮播 — 调研 → 品牌化设计 → PNG |
 | **ppt-slide-generator** | 16:9 演示文稿 — 调研 + 两轮审校 + PDF / Google Slides 交付 |
 | **print-design** | 海报、传单、横幅、名片 — 访谈 → 设计 → 严格 QA 循环 → 字体轮廓化的印刷级 PDF。**仅限旗舰模型** |
 | **brand-guide** | 从网站或 Logo 提取可量化的品牌系统（令牌 + 语调） |
@@ -67,8 +67,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **zernio-social** | 通过 Zernio 多平台自然发布/排期 — 内容日历、媒体上传、发布审批门 |
 | **zernio-ads** | 7 大平台付费广告 — 加热/campaign/受众/分析，预算审批门，内置 A/B 素材 |
-| **resend-email** | Resend 免费档（每月 3,000 封）事务邮件 + Newsletter — 强制退订链接、标题 A/B |
-| **instantly-cold-email** | Instantly.ai 冷邮件 campaign、序列、线索上传 |
+| **e-blast-newsletter** | Resend 免费档（每月 3,000 封）事务邮件 + Newsletter — 强制退订链接、标题 A/B |
+| **b2b-cold-email** | Instantly.ai 冷邮件 campaign、序列、线索上传 |
 | **lead-magnet** | 头脑风暴 → 制作实物引流磁铁 → Google Sheets 线索库 |
 | **cyrano** | 会前对象调研简报，带引用来源（Slack/Telegram/邮件送达） |
 
@@ -86,8 +86,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 | 技能 | 环境变量 |
 |---|---|
-| resend-email | `RESEND_API_KEY`（免费） |
-| instantly-cold-email | `INSTANTLY_API_KEY` |
+| e-blast-newsletter | `RESEND_API_KEY`（免费） |
+| b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 所连 CRM 的密钥（技能会引导你） |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` 或 `GEMINI_API_KEY` |
@@ -105,7 +105,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 - **AIMS**（[aim-squad.com](https://aim-squad.com)）— 一直在向他们学习，谢谢。
 - **cyrano** 基于 GPTAKU 的 [insane-search](https://github.com/fivetaku/insane-search) fork 而来，感谢。
-- card-news-generator 的预设来自真实运营品牌的示例 — 请换成你自己的品牌。
+- carousel-generator 的预设来自真实运营品牌的示例 — 请换成你自己的品牌。
 
 ## License
 

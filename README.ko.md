@@ -46,7 +46,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **콘텐츠 제작**
 | 스킬 | 하는 일 |
 |---|---|
-| **card-news-generator** | 인스타/스레드 카드뉴스 — 리서치 → 브랜드 디자인 → PNG |
+| **carousel-generator** | 캐러셀 생성기 — 인스타/스레드 캐러셀(카드뉴스), 리서치 → 브랜드 디자인 → PNG |
 | **ppt-slide-generator** | 16:9 발표자료 — 리서치 + 2단계 검수 + PDF/Google Slides |
 | **print-design** | 포스터·전단·현수막·명함 — 인터뷰 → 디자인 → 빡센 QA 루프 → 폰트 아웃라인된 인쇄소 입고 PDF. **Frontier 모델 전용** |
 | **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 |
@@ -67,8 +67,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **zernio-social** | Zernio 멀티플랫폼 오가닉 발행/예약 — 캘린더, 미디어 업로드, 발행 게이트 |
 | **zernio-ads** | 유료 광고 7개 플랫폼 — 부스트/캠페인/오디언스/analytics, 예산 승인 게이트, A/B creative 내장 |
-| **resend-email** | Resend 무료 티어(월 3,000통) 트랜잭셔널+뉴스레터 — 수신거부 링크 강제, 제목 A/B |
-| **instantly-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 |
+| **e-blast-newsletter** | Resend 무료 티어(월 3,000통) 트랜잭셔널+뉴스레터 — 수신거부 링크 강제, 제목 A/B |
+| **b2b-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 |
 | **lead-magnet** | 브레인스토밍 → 실물 제작 → Google Sheets 리드 DB |
 | **cyrano** | 미팅 상대 사전 리서치 → 소스 인용 브리핑 (Slack/Telegram/이메일) |
 
@@ -86,8 +86,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 | 스킬 | 환경변수 |
 |---|---|
-| resend-email | `RESEND_API_KEY` (무료) |
-| instantly-cold-email | `INSTANTLY_API_KEY` |
+| e-blast-newsletter | `RESEND_API_KEY` (무료) |
+| b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` 또는 `GEMINI_API_KEY` |
@@ -105,7 +105,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 - **AIMS** ([aim-squad.com](https://aim-squad.com)) — 옆에서 많이 배우고 있습니다. 고맙습니다.
 - **cyrano**는 GPTAKU님의 [insane-search](https://github.com/fivetaku/insane-search)를 포크해서 만들었습니다. 감사합니다.
-- card-news-generator의 프리셋은 실제 운영 브랜드의 worked example — 본인 브랜드로 교체해서 쓰세요.
+- carousel-generator의 프리셋은 실제 운영 브랜드의 worked example — 본인 브랜드로 교체해서 쓰세요.
 
 ## License
 

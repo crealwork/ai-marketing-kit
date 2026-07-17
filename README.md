@@ -46,7 +46,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **Content**
 | Skill | What it does |
 |---|---|
-| **card-news-generator** | Instagram/Threads card carousels — research → branded design → PNG |
+| **carousel-generator** | Instagram/Threads card carousels — research → branded design → PNG |
 | **ppt-slide-generator** | 16:9 decks — research + two-stage review + PDF / Google Slides delivery |
 | **print-design** | Posters, flyers, banners, business cards — interview → design → harsh QA loop → press-ready PDF with outlined fonts. **Frontier model only** |
 | **brand-guide** | Extract a measurable brand system (tokens + voice) from a site or logo |
@@ -67,8 +67,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **zernio-social** | Multi-platform organic publishing/scheduling via Zernio — calendars, media upload, publish gates |
 | **zernio-ads** | Paid ads across 7 platforms — boost/campaigns/audiences/analytics, budget-approval gates, A/B creatives built in |
-| **resend-email** | Transactional + newsletters on Resend's free tier (3,000/mo) — unsubscribe links enforced, subject A/B |
-| **instantly-cold-email** | Instantly.ai cold email campaigns, sequences, lead uploads |
+| **e-blast-newsletter** | Transactional + newsletters on Resend's free tier (3,000/mo) — unsubscribe links enforced, subject A/B |
+| **b2b-cold-email** | Instantly.ai cold email campaigns, sequences, lead uploads |
 | **lead-magnet** | Brainstorm → build the actual magnet → Google Sheets lead database |
 | **cyrano** | Pre-meeting research briefs with cited sources (Slack/Telegram/email delivery) |
 
@@ -86,8 +86,8 @@ Everything via environment variables — never write keys into files.
 
 | Skill | Env var |
 |---|---|
-| resend-email | `RESEND_API_KEY` (free) |
-| instantly-cold-email | `INSTANTLY_API_KEY` |
+| e-blast-newsletter | `RESEND_API_KEY` (free) |
+| b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | your CRM's key (the skill guides you) |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` or `GEMINI_API_KEY` |
@@ -105,7 +105,7 @@ Everything via environment variables — never write keys into files.
 
 - **AIMS** ([aim-squad.com](https://aim-squad.com)) — we learn a lot from them. Thank you.
 - **cyrano** is a fork of [insane-search](https://github.com/fivetaku/insane-search) by GPTAKU. Thank you.
-- card-news-generator's presets are worked examples from real brands — swap in your own.
+- carousel-generator's presets are worked examples from real brands — swap in your own.
 
 ## License
 

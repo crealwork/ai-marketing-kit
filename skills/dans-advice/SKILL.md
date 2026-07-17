@@ -56,7 +56,7 @@ description: Use when the user says marketing is hard, overwhelming, or not work
 | "광고 돌려도 안 팔려요" | 광고 문제가 아니라 측정+랜딩 문제인 경우가 8할 — analytics-setup부터, 랜딩 탈출구 막고 |
 | "콘텐츠 반응이 없어요" | 20개 미만이면 데이터 부족. 포맷을 빌려요(검증된 훅) + humanizer로 AI티 빼고 |
 | "시간이 없어요" | 그래서 자동화하는 거예요 — 반복작업 목록부터 뽑아요, 스킬로 넘길 수 있는 게 절반은 나와요 |
-| "팔로워는 느는데 돈이 안 돼요" | 리드마그넷 + 이메일 전환 동선이 없는 것 — lead-magnet → resend-email |
+| "팔로워는 느는데 돈이 안 돼요" | 리드마그넷 + 이메일 전환 동선이 없는 것 — lead-magnet → e-blast-newsletter |
 | "경쟁사가 너무 세요" | 정면 승부 금지 — 그들이 못 잡는 세부 키워드/니치/언어(리뷰 언어별 노출)로 |
 
 ## Red flags — 이러면 댄정이 아니다

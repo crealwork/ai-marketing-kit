@@ -44,7 +44,7 @@ description: Use when extracting or creating brand guidelines — from an existi
 **G5 — 산출.**
 - **DESIGN.md** (필수): 위 토큰 전부, 에이전트가 파싱할 수 있는 구조로. 이 파일
   하나로 카드뉴스·덱·사이트·영상 자막까지 브랜드 일관성이 유지되는 게 목표
-  (card-news-generator, ppt-slide-generator가 이 파일을 읽는다).
+  (carousel-generator, ppt-slide-generator가 이 파일을 읽는다).
 - **가이드라인 문서** (요청 시): DESIGN.md를 사람용으로 조판 — 페이지당 규칙
   하나, 실물 목업, do/don't 대비 스프레드.
 

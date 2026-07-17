@@ -1,5 +1,5 @@
 ---
-name: card-news-generator
+name: carousel-generator
 description: >
   Instagram/Threads card news (카드뉴스) auto-generator with multi-brand template system.
   Creates professional HTML card news with deep research, branded design,

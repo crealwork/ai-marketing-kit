@@ -1,6 +1,6 @@
 ---
-name: instantly-cold-email
-description: Use when creating, managing, or automating cold email campaigns via Instantly.ai API. Trigger when user mentions Instantly, cold email, outbound email, email sequence, lead upload, or wants to set up cold outreach campaigns.
+name: b2b-cold-email
+description: Use when creating, managing, or automating cold email campaigns via Instantly.ai API. Trigger when user mentions B2B outreach, B2B 콜드메일, Instantly, cold email, outbound email, email sequence, lead upload, or wants to set up cold outreach campaigns.
 ---
 
 # Instantly Cold Email (API v2)

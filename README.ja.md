@@ -46,7 +46,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 **コンテンツ制作**
 | スキル | できること |
 |---|---|
-| **card-news-generator** | Instagram/Threads カルーセル — リサーチ → ブランドデザイン → PNG |
+| **carousel-generator** | Instagram/Threads カルーセル — リサーチ → ブランドデザイン → PNG |
 | **ppt-slide-generator** | 16:9 スライド — リサーチ + 二段階レビュー + PDF / Google Slides 納品 |
 | **print-design** | ポスター・チラシ・横断幕・名刺 — ヒアリング → デザイン → 厳格なQAループ → フォントアウトライン済みの入稿用PDF。**フロンティアモデル専用** |
 | **brand-guide** | サイトやロゴから測定可能なブランドシステム（トークン+ボイス）を抽出 |
@@ -67,8 +67,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 |---|---|
 | **zernio-social** | Zernio でマルチプラットフォームのオーガニック投稿/予約 — カレンダー、メディアアップロード、公開承認ゲート |
 | **zernio-ads** | 7プラットフォームの有料広告 — ブースト/キャンペーン/オーディエンス/分析、予算承認ゲート、A/Bクリエイティブ内蔵 |
-| **resend-email** | Resend 無料枠（月3,000通）でトランザクション+ニュースレター — 配信停止リンク必須、件名A/B |
-| **instantly-cold-email** | Instantly.ai のコールドメールキャンペーン、シーケンス、リード登録 |
+| **e-blast-newsletter** | Resend 無料枠（月3,000通）でトランザクション+ニュースレター — 配信停止リンク必須、件名A/B |
+| **b2b-cold-email** | Instantly.ai のコールドメールキャンペーン、シーケンス、リード登録 |
 | **lead-magnet** | ブレスト → 実物のリードマグネット制作 → Google Sheets リードDB |
 | **cyrano** | 商談前リサーチブリーフ、出典付き（Slack/Telegram/メール配信） |
 
@@ -86,8 +86,8 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 | スキル | 環境変数 |
 |---|---|
-| resend-email | `RESEND_API_KEY`（無料） |
-| instantly-cold-email | `INSTANTLY_API_KEY` |
+| e-blast-newsletter | `RESEND_API_KEY`（無料） |
+| b2b-cold-email | `INSTANTLY_API_KEY` |
 | crm-connect | 接続するCRMのキー（スキルが案内） |
 | zernio-social / zernio-ads | `ZERNIO_API_KEY` |
 | image-gen / thumbnail-maker | `OPENAI_API_KEY` または `GEMINI_API_KEY` |
@@ -105,7 +105,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 - **AIMS**（[aim-squad.com](https://aim-squad.com)）— いつも多くを学ばせてもらっています。ありがとうございます。
 - **cyrano** は GPTAKU さんの [insane-search](https://github.com/fivetaku/insane-search) のフォークです。感謝。
-- card-news-generator のプリセットは実在ブランドの実例 — 自分のブランドに差し替えて使ってください。
+- carousel-generator のプリセットは実在ブランドの実例 — 自分のブランドに差し替えて使ってください。
 
 ## ライセンス
 

@@ -1,6 +1,6 @@
 ---
 name: lead-magnet
-description: Use when creating a lead magnet end-to-end — brainstorming the offer with the user through Q&A, building the actual deliverable (checklist, guide PDF, template, swipe file), and wiring captured leads into a Google Sheets database. Triggers: "리드마그넷 만들자", "리드 마그넷 브레인스토밍", "무료 자료 만들어서 리드 모으고 싶어", "lead magnet", "무료 가이드 만들어줘", "이메일 수집하게 자료 하나". 뉴스레터 발송 자체는 resend-email로.
+description: Use when creating a lead magnet end-to-end — brainstorming the offer with the user through Q&A, building the actual deliverable (checklist, guide PDF, template, swipe file), and wiring captured leads into a Google Sheets database. Triggers: "리드마그넷 만들자", "리드 마그넷 브레인스토밍", "무료 자료 만들어서 리드 모으고 싶어", "lead magnet", "무료 가이드 만들어줘", "이메일 수집하게 자료 하나". 뉴스레터 발송 자체는 e-blast-newsletter로.
 ---
 
 # Lead Magnet
@@ -39,7 +39,7 @@ description: Use when creating a lead magnet end-to-end — brainstorming the of
 
 - 랜딩(또는 기존 페이지 섹션): 헤드라인 = 약속, 폼 필드는 **이메일 (+이름)만** —
   필드 하나 늘 때마다 전환이 떨어진다. 광고/PPC 랜딩이면 네비게이션 제거.
-- 제출 직후 **자동 전달 메일** (resend-email): 감사 + 다운로드 링크. 이 메일의
+- 제출 직후 **자동 전달 메일** (e-blast-newsletter): 감사 + 다운로드 링크. 이 메일의
   hard bounce = 가짜 이메일 → 시트에서 즉시 표시/삭제 (진짜 사람만 남기기).
 - UTM 태깅: 어떤 채널이 리드를 가져왔는지 폼 hidden 필드로 함께 수집.
 
@@ -71,7 +71,7 @@ function doPost(e) {
 
 ## G5 — 후속
 
-- 전달 메일 후 시퀀스 2–3통 (가치 → 사례 → 본상품 제안) — resend-email의
+- 전달 메일 후 시퀀스 2–3통 (가치 → 사례 → 본상품 제안) — e-blast-newsletter의
   브로드캐스트/오디언스로. 리스트가 크면 CRM으로 승격 (crm-connect).
 - 주간 점검: 시트 리드 수 + 채널(utm)별 전환 — 안 되는 채널은 끄고 되는 채널에
   집중.
