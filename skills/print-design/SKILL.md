@@ -61,9 +61,37 @@ description: Use when designing anything for PRINT — posters, flyers, banners,
 6. **브랜드**: 로고 최소 크기/여백/금지 배경 준수.
 7. **정렬**: 그리드에서 벗어난 요소, 어중간한 여백.
 
-## G5 — 딜리버리
+## G5 — Print-ready 마감 (폰트 아웃라인 + 컬러)
 
-- 인쇄용 PDF (블리드 포함) + 미리보기 PNG + **인쇄소 전달용 스펙 한 줄**
-  (재단 크기/블리드/컬러/용지 권장).
+QA 통과본을 인쇄소가 그대로 받는 파일로 마감한다. 도구는 **Ghostscript** —
+VERIFY: `gswin64c -version` (Windows) / `gs -version`. 없으면 설치:
+github.com/ArtifexSoftware/ghostpdl-downloads/releases (Windows `gs*w64.exe /S`),
+macOS `brew install ghostscript`.
+
+**1. 폰트 아웃라인 (기본).** Chromium PDF는 폰트를 서브셋 임베드하지만, 아웃라인
+(전 텍스트 → 벡터 패스)이 가장 안전하다 — 인쇄소 RIP 호환·폰트 라이선스 이슈가
+사라진다:
+
+```
+gswin64c -o {name}_print.pdf -sDEVICE=pdfwrite -dNoOutputFonts {name}_qa.pdf
+```
+
+**2. CMYK 변환 (인쇄소가 요구할 때만).** 위 명령에 추가:
+`-sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK`
+ICC 프로파일 없는 RGB→CMYK는 색이 틀어진다(특히 비비드/네온) — **인쇄소에 먼저
+물어라**: 디지털 인쇄는 RGB PDF를 받는 곳이 많고, 그 경우 변환하지 않는 게 낫다.
+
+**3. 마감 검증 (blocking).**
+- 폰트 제거 확인: `mutool info -F {name}_print.pdf` → 폰트 목록이 **비어야** 한다
+  (mutool 없으면 winget `ArtifexSoftware.mutool`).
+- 아웃라인 후 재렌더 육안 비교: `mutool draw -o check.png -r 72 {name}_print.pdf`
+  → QA본과 나란히 READ — 글리프 깨짐/헤어라인 두께 변화 확인. 아웃라인 변환은
+  드물게 얇은 획을 바꾼다.
+- 파일 크기 확인 — 텍스트 많은 문서는 아웃라인 후 커진다(정상), 10배 이상이면 조사.
+
+**4. 딜리버리.**
+- `{name}_print.pdf` (블리드+재단표시+아웃라인, 요구 시 CMYK) + `{name}_preview.png`
+  + **인쇄소 전달용 스펙 한 줄** (재단 크기/블리드/컬러모드/용지 권장/"폰트
+  아웃라인 완료").
 - 유저에게는 시안 1–2개만 — QA를 통과한 것만. "여러 버전 중 골라보세요"로
   미완성본을 떠넘기지 않는다.
