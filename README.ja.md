@@ -106,7 +106,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 ## 作者について
 
-**Dan Jeong** — 11年目のマーケター兼起業家、Lovable アンバサダー。現在は AI スタートアップ [Sundayable](https://www.sundayable.com) を立ち上げ、マーケティングのあらゆる工程を AI で刷新中 — このキットは、私が仕事で実際に使っているものを集めたものです。
+**Dan Jeong** — 11年目のマーケター兼起業家、Lovable アンバサダー Alumni。現在は AI スタートアップ [Sundayable](https://www.sundayable.com) を立ち上げ、マーケティングのあらゆる工程を AI で刷新中 — このキットは、私が仕事で実際に使っているものを集めたものです。
 
 ## 謝辞
 

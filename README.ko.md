@@ -106,7 +106,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 
 ## 만든 사람
 
-**댄 정 (Dan Jeong)** — 11년차 마케터이자 창업가, Lovable 앰버서더. 지금은 AI 스타트업 [Sundayable](https://www.sundayable.com)을 만들며 마케팅의 모든 과정을 AI로 혁신하는 중입니다. 제가 일할 때 쓰는 것들 모았습니다.
+**댄 정 (Dan Jeong)** — 11년차 마케터이자 창업가, Lovable 앰버서더 Alumni. 지금은 AI 스타트업 [Sundayable](https://www.sundayable.com)을 만들며 마케팅의 모든 과정을 AI로 혁신하는 중입니다. 제가 일할 때 쓰는 것들 모았습니다.
 
 ## 감사
 
