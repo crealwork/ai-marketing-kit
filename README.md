@@ -1,8 +1,8 @@
 <h1 align="center">marketing-kit</h1>
 
 <p align="center">
-  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 10종.</b><br>
-  전부 실제 비즈니스에서 돌려본 것만 — SEO 기반 공사부터 콜드메일, CRM, 카드뉴스, 미팅 리서치까지.
+  <b>마케터의 AI 에이전트에 통째로 꽂는 실전 마케팅 스킬 13종.</b><br>
+  SEO 기반 공사부터 유료 광고, 무료 뉴스레터, CRM 연동, 카드뉴스, 브랜드 가이드, 휴머나이저까지.
 </p>
 
 ---
@@ -31,13 +31,16 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 
 | 스킬 | 하는 일 | 트리거 예시 |
 |---|---|---|
-| **seo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + GA4/GTM/Clarity 측정 + 로컬 SEO + Zernio 광고. 퍼블리시 head 체크리스트(favicon·OG·title 복붙 템플릿) 포함 | "이 사이트 SEO 세팅해줘" |
+| **seo-setup** | 검색엔진 5종 등록(Google·Naver·Bing·Daum·Pinterest) + GA4/GTM/Clarity 측정 + 로컬 SEO. 퍼블리시 head 체크리스트(favicon·OG·title 복붙 템플릿) 포함 | "이 사이트 SEO 세팅해줘" |
+| **zernio-ads** | 유료 광고 — 포스트 부스트/독립 캠페인/오디언스/analytics, Meta·Google·TikTok 등 7개 플랫폼. 예산 승인 게이트 내장 | "이 포스트 부스트해줘" |
+| **resend-email** | Resend로 트랜잭셔널 + 뉴스레터 — 무료 티어(월 3,000통)로 시작, 수신거부 링크 강제 | "뉴스레터 보내줘" |
+| **crm-connect** | 어떤 CRM이든 API로 연결하는 방법론 — HubSpot·Pipedrive·Close·Attio·Airtable 등, 연결 카드로 재사용 | "우리 CRM 연동해줘" |
 | **card-news-generator** | 인스타/스레드 카드뉴스 — 리서치→브랜드 디자인→PNG. 브랜드 프리셋 시스템 | "카드뉴스 만들어줘" |
 | **ppt-slide-generator** | 16:9 발표자료 — 리서치 + 2단계 검수 + PDF/Google Slides 딜리버리 | "이 주제로 PPT" |
-| **mailerlite-newsletter** | MailerLite 캠페인 제작/발송 — 실전 API 함정 문서화 | "뉴스레터 보내줘" |
 | **instantly-cold-email** | Instantly.ai 콜드메일 캠페인·시퀀스·리드 업로드 — 유저 승인 게이트 | "콜드메일 캠페인" |
-| **close-crm** | Close.com 리드/딜/파이프라인 관리 — status_id 함정 등 | "CRM에 리드 추가" |
 | **cyrano** | 미팅 상대 사전 리서치 → 소스 인용 브리핑 (Slack/Telegram/이메일 전달) | "이 사람 누구야?" |
+| **humanizer** | AI 초안에서 AI 티 제거 — 영/한 금지 패턴 + 구체성 주입 | "AI티 나는 거 고쳐줘" |
+| **brand-guide** | 사이트/로고에서 측정 가능한 브랜드 시스템(토큰+보이스) 추출 — frontier 모델 권장 | "브랜드 가이드 뽑아줘" |
 | **yc-office-hours** | 아이디어·캠페인·GTM을 YC 파트너 스타일로 검증 | "이거 할만한 아이디어야?" |
 | **go-viral-or-die** | 바이럴/스턴트 마케팅 아이디어 (Roy Lee 플레이북) | "바이럴 아이디어 줘" |
 | **first-principles-coach** | 가격·프로덕트·그로스 가정을 근본부터 점검 | "가정 점검해줘" |
@@ -50,10 +53,10 @@ cp -r marketing-kit/skills/* ~/.claude/skills/
 
 | 스킬 | 환경변수 |
 |---|---|
-| mailerlite-newsletter | `MAILERLITE_API_KEY` |
+| resend-email | `RESEND_API_KEY` (무료 발급) |
 | instantly-cold-email | `INSTANTLY_API_KEY` |
-| close-crm | `CLOSE_API_KEY` |
-| seo-setup (G4 광고만) | `ZERNIO_API_KEY` |
+| crm-connect | 연결하는 CRM별 키 (스킬이 안내) |
+| zernio-ads | `ZERNIO_API_KEY` |
 | cyrano (전달 채널) | `CYRANO_SLACK_WEBHOOK` / `CYRANO_TELEGRAM_TOKEN` / `CYRANO_SMTP_PASS` |
 
 ## 안전 룰 (전 스킬 공통)
