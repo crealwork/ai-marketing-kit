@@ -22,7 +22,8 @@ description: 'Use when generating marketing images or AI video clips — newslet
    소재는 A/B 전제 — 4개+** (훅 축 × 비주얼 축). 1장 생성은 이 스킬 위반.
 5. **생성 후 눈으로 검증**: 각 결과를 READ — 이미지 속 텍스트는 글자 단위로,
    손가락/로고 왜곡, 브랜드 컬러. 텍스트가 핵심인 이미지는 **텍스트를 굽지 말고
-   HTML/PIL 오버레이**가 기본.
+   HTML/PIL 오버레이**가 기본. (예외: 유튜브 썸네일은 thumbnail-maker 룰대로
+   문구 포함 통생성이 기본 — gpt_image_2가 텍스트 렌더에 강해서.)
 6. 실존 인물은 유저 제공 사진 기반(`--image` 레퍼런스)만 — 얼굴을 지어내지 않는다.
 7. Windows에서 CLI는 전체 경로로: `%APPDATA%\npm\higgsfield.cmd`.
 
