@@ -56,7 +56,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **humanizer** | 英/韓テキストからAIっぽさを除去 + 表示テキストの改行の基本 |
 | **content-repurpose** | Threads ↔ LinkedIn を各プラットフォームのネイティブ文法で書き直し |
 | **image-gen** | マーケティング画像 — **すべて Higgsfield CLI 経由（デフォルトモデル gpt-image-2）** — 標準で3案以上、広告は必ずA/B |
-| **thumbnail-maker** | 動画サムネイル — 常に4案以上のA/Bセット、文字は焼き込まずオーバーレイ、実在の顔写真のみ参照 |
+| **thumbnail-maker** | 動画サムネイル — 常に4案以上のA/Bセット、文字込みのワンショット生成（一文字ずつ検証）、実在の顔の切り抜きのみ参照 |
 
 **動画**
 | スキル | できること |

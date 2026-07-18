@@ -56,7 +56,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **humanizer** | Elimina las marcas de IA del texto (EN/KR) + fundamentos de saltos de línea |
 | **content-repurpose** | Threads ↔ LinkedIn reescrito en la gramática nativa de cada plataforma |
 | **image-gen** | Imágenes de marketing — **todo vía Higgsfield CLI (modelo por defecto gpt-image-2)** — 3+ variantes por defecto, anuncios siempre en A/B |
-| **thumbnail-maker** | Miniaturas de video — siempre un set A/B de 4+ variantes, texto superpuesto (no horneado), solo referencias de rostros reales |
+| **thumbnail-maker** | Miniaturas de video — siempre un set A/B de 4+ variantes, generación en un solo paso con el texto incluido (verificado letra a letra), solo recortes de rostros reales como referencia |
 
 **Video**
 | Skill | Qué hace |

@@ -56,7 +56,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **humanizer** | 去除中英文 AI 痕迹 + 展示文本的换行基本功 |
 | **content-repurpose** | Threads ↔ LinkedIn 按各平台原生语法重写 |
 | **image-gen** | 营销图像 — **统一经 Higgsfield CLI（默认模型 gpt-image-2）** — 默认 3+ 变体，广告必须 A/B |
-| **thumbnail-maker** | 视频缩略图 — 始终 4+ 变体 A/B 组，文字叠加而非烘焙，仅用真实人脸参考 |
+| **thumbnail-maker** | 视频缩略图 — 始终 4+ 变体 A/B 组，一次性生成并烘焙文字（逐字校验），仅用真实人脸抠图参考 |
 
 **视频**
 | 技能 | 功能 |

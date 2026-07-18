@@ -50,7 +50,10 @@ higgsfield generate create gpt_image_2 --image ./reference.png \
   --quality high --resolution 2k --wait --json
 ```
 
-- 응답 JSON에서 `result_url` 파싱 → 다운로드는 Python `urllib.request.urlretrieve`
+- **결과 파싱**: 출력은 pretty-print JSON — `result_url` 키를 믿지 말고 stdout
+  전체를 `json.loads` 후 **재귀로 이미지 URL을 전부 수집**, 입력 레퍼런스가
+  올라간 호스트를 제외한 URL이 결과물. 파일로 저장한 출력은 BOM이 붙는다
+  (`encoding='utf-8-sig'`). 다운로드는 Python `urllib.request.urlretrieve`
   (Windows curl 인코딩 함정 회피).
 - 일시적 502 → **1회만** 재시도. 반복 실패는 보고.
 - 레퍼런스 충실도가 중요한 합성은 프롬프트에 "reproduce EXACTLY as provided,

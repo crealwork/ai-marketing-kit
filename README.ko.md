@@ -56,7 +56,7 @@ cp -r ai-marketing-kit/skills/* ~/.claude/skills/
 | **humanizer** | 영/한 AI 티 제거 + 표시 텍스트 줄나눔 기본기 |
 | **content-repurpose** | Threads ↔ LinkedIn — 각 플랫폼 네이티브 문법으로 재구성 |
 | **image-gen** | 마케팅 이미지 — **힉스필드 CLI 경유(기본 모델 gpt-image-2)** — 변형 3개+ 기본, 광고는 A/B 필수 |
-| **thumbnail-maker** | 영상 썸네일 — 항상 4개+ A/B 세트, 문구는 오버레이, 실제 얼굴 사진 기반만 |
+| **thumbnail-maker** | 영상 썸네일 — 항상 4개+ A/B 세트, 문구까지 통생성(글자 단위 검증), 실제 얼굴 누끼 레퍼런스만 |
 
 **영상**
 | 스킬 | 하는 일 |
