@@ -57,12 +57,34 @@ not from heuristics.
   target ≤ 50% of raw length. Q&A: keep, gap-trim only.
 - Silence: split at inter-word gaps > 1.75s; pads head 0.30 / tail 0.35 / edges
   0.15–0.25; merge segments < 0.8s. Every edge ON a word boundary. → `scripts/gen_edl.py`
+- **Tight-pacing pass (default since 2026-07-21, per Dan — retention over comfort):**
+  after the >1.75s cuts, also compress every remaining inter-phrase silence ≥ 0.5s down
+  to ~0.3s (cut `[start+0.15, end−0.15]` of the detected silence). Keep the 0.3s breath —
+  zero-gap speech reads as glitchy. Both joint edges MUST land inside the silence
+  (< −32dB), never on speech. Exception: an intentional dramatic beat before a key
+  claim may keep ONE compressed pause; never cut it to zero, never keep more than one
+  in a row.
 
 ## 4. Disfluency pass (말더듬)
 
 `scripts/scan_fillers.py` rules: standalone fillers (어/음/uh/um; dur ≥ 0.12s, gapped),
 `--`/`-` false starts, comma-restarts (uni+bigram), emphasis whitelist (정말/너무/really…).
 Expected 5–30s total removed — outside that range means the rules misfired; stop and inspect.
+
+**Word-recall stumbles (절은 구간) — cut the whole attempt, not just the filler.**
+Rules above miss multi-phrase blank-outs: speaker loses a word, circles, then lands it
+(real case: "솔, 선. 이제 선, 이제 저희 태양이죠." → cut; kept "테라, 지구죠 → 그래서
+이제 태양…"). These are found by READING the transcript, not by heuristics: look for
+repeated attempts at the same word, wrong-language substitutions, and restarts that
+add no new information. Cut from the last clean phrase-end to the first clean retake;
+both edges inside silence. If removing the stumble leaves the fact unstated, keep the
+best single take instead. Sentence-internal quick restarts with no pause ("하우 투 두
+하우 투 두 가이드") stay — a mid-word joint is worse than the stumble.
+
+**No-transcript fallback (finished renders with burned captions):** caption-band frame
+tiles (`fps=2, crop the caption strip, tile`) give phrase timing + text; `silencedetect
+-32dB:d=0.45` gives cut points. Read the tiles like a transcript, apply the same rules.
+Proven 2026-07-21 on 5 already-rendered scheduled shorts.
 
 ## 5. Relayout render
 

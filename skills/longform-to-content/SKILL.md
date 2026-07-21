@@ -33,7 +33,8 @@ references/BRAND.md — derive from the user's site/deck, or interview, or apply
 neutral default. Never invent brand values silently.
 
 **G2 — Edit.** Follow references/PIPELINE.md exactly: transcribe once (word-level,
-cached) → measure layout geometry per recording → EDL (silence + disfluency cuts) →
+cached) → measure layout geometry per recording → EDL (silence + tight-pacing +
+disfluency/stumble cuts — tight is the retention default, PIPELINE.md §3–4) →
 relayout render → cold open + cards → corrected burned captions LAST → SRT + chapters →
 frame-by-frame self-review before showing the user. Caption timing/text correctness has
 its own bible: references/CAPTIONS.md — read it before writing any cue.
