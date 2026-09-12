@@ -81,65 +81,72 @@ No fluff, real-world advice. Professional but approachable.
 
 ### Preset: Sundayable
 
-*(Synced to the live site sundayable.com on 2026-07-16. If in doubt, the live site and
-the brand portal at proof.getsundayable.com/brand win over this file.)*
+*(Brand System 2.0, paper surface. Synced to
+https://brand.sundayable.ca/downloads/v2/tokens.css on 2026-09-12. The brand site
+wins over this file — check `surfaceRevision` in
+https://brand.sundayable.ca/brand-package.json before a large run.)*
 
 **Account**: @sundayable
 **Brand name**: Sundayable.
-**Footer text**: `Sundayable.` (wordmark only, period included, never burgundy)
+**Footer text**: `Sundayable.` (supplied wordmark artwork, period included)
 **Content domain**: Sunday, the AI operator, ships finished work for small business —
 pages, ads, reels, cold outreach, CRM ops, weekly workflows. Positioning: "AI + Revenue
 Growth Team for Small Business". Key line: "People don't need more software. They need
 the work done." Never call Sunday a tool or copilot; it's an operator that ships.
 **Language**: English (Korean OK for Korean-market audiences)
 **CTA button text**: `Book a Free Demo` (site CTA) or `Follow Dan Jeong at Sundayable` for follow-type cards
-**Site**: sundayable.com · Brand kit: proof.getsundayable.com/brand
+**Site**: sundayable.com · Brand kit: brand.sundayable.ca
 
 **Tone**: Editorial-minimal. Magazine typography meets a clean iOS message thread.
 Direct, declarative, no jargon. **No em-dashes. No emojis. No exclamation marks.**
 Contractions OK. Talks like a person, not a brand.
 
-**Color Palette (warm — never cool grays, never pure-white backgrounds):**
-- Paper (Background): `#EFECE6` -- warm cream, main background
-- Card: `#FFFFFF` -- cards/panels sitting on paper
-- Ink (Primary): `#0A0A0A` -- headings, primary text, wordmark
-- Body: `#1F1F1F` -- body text on paper
-- Muted: `#5F5A50` -- subtext, descriptions, meta labels
-- Subtle: `#98927F` -- disclaimers, fine print
-- Divider: `#DDD8CC` -- borders, separators
-- Surface: `#E7E3D9` -- card insets, alternating sections
-- Burgundy (Accent): `#800020` -- italic emphasis, CTA fills, accent bars (hover `#660019`)
-- **No burgundy tints** (rose-soft `#F2DEE3` was killed 2026-07-16): full-strength burgundy or nothing. Sunday's bubbles/status pills sit on Surface `#E7E3D9` with the burgundy S avatar for differentiation
+**Color Palette (Brand System 2.0 — there is NO accent hue):**
+- Paper (Background): `#F5F3EE` -- the reading ground, warm off-white
+- Card: `#FCFBF8` -- raised panels sitting on Paper
+- Surface: `#ECE9E2` -- insets, alternating sections, chat bubbles
+- Ink (Primary): `#1B2233` -- headings, body, controls, wordmark
+- Muted: `#4F5768` -- subtext, descriptions, meta labels, fine print
+- Line: `#DDD9D0` -- borders and separators. Decorative, never a text colour
+- Night: `#0A0F1E` -- dark cards and finale states
+- Dust: `#CCBFBC` -- metadata on dark grounds only, never on Paper
+- Approval: `#3E7C4F` -- status signals only, never a second accent
+- **v2 retired burgundy entirely.** Contrast comes from the Ink/Paper inversion and
+  from weight, never from hue. On dark cards, reverse to Paper type on Night.
 
-**Typography (override Pretendard with these):**
-- Display headings: `Instrument Serif` (400) -- Google Fonts
-- Italic emphasis only: `DM Serif Display` (400 italic) -- burgundy color
-- Body: `Inter` (300-700) -- Google Fonts
-- Wordmark `Sundayable.` is **always Instrument Serif**, ink color, period included
+**Typography (override Pretendard-only stacks with these):**
+- Display headings, prices, buttons: `Gabarito` 600/700
+- Body: `Figtree` 400/500
+- Labels, timings, proof, system state: `IBM Plex Mono` 500 -- not a paragraph face
+- Korean: `Pretendard` -- the Latin faces do not cover Hangul
+- Load all three from `https://brand.sundayable.ca/downloads/v2/fonts/fonts.css`.
+  Only the listed weights exist; asking for a heavier one gets a faked bold.
+- Wordmark `Sundayable.` is **supplied artwork, never typeset** (see hard rule 4)
 
-**Italic emphasis pattern** -- ONE per card max (max 2-3 per deck total):
+**Emphasis pattern** -- ONE per card max (max 2-3 per deck total). Weight, not colour:
+
 ```html
-<em style="font-family: 'DM Serif Display'; font-style: italic; color: #800020;">phrase</em>
+<em style="font-family: 'Gabarito'; font-weight: 700; font-style: normal; color: #1B2233;">phrase</em>
 ```
 
 **Hard rules (Sundayable-specific):**
 1. **Hard ban: em-dashes, emojis, exclamation marks.** No exceptions.
 2. **Hard ban words**: leverage, unlock, seamless, dive into, AI-powered, robust, navigate the complexities, in the realm of.
-3. **One italic emphasis per card max.** Don't stack.
-4. **Wordmark `Sundayable.`** -- the period is part of the wordmark, never colored separately, never burgundy.
+3. **One emphasis per card max.** Don't stack.
+4. **Wordmark `Sundayable.`** -- use the supplied artwork, never typeset or redraw it. The period is part of the wordmark and is never coloured separately. Ink on light, Paper on dark, nothing else.
 4b. **S mark is minimal-use ONLY** (Dan, 2026-07-16): favicons, point icons, Sunday's chat avatar. Never next to the wordmark, never as a card's brand mark, no lockups. On cards the brand is always the wordmark.
-5. **Burgundy is for**: italic emphasis spans, CTA button fills, accent bars only. Nothing else competes.
-6. **No gradients. No multi-tone shadows. No stock photos. No illustrations.**
+5. **No accent hue.** Emphasis is weight and surface level. Approval green is a state signal, not decoration.
+6. **No gradients on reading surfaces. No multi-tone shadows. No stock photos. No illustrations.**
 7. **Body never below 16px** (cards: ≥ 24px since cards are mobile-first social).
-8. **CTAs are pill-shaped** (`border-radius: 999px`) with burgundy fill, white text.
+8. **CTAs are pill-shaped** (`border-radius: 999px`) with Ink fill and Paper text.
 9. **Footer pattern**: `Sundayable.` wordmark left, `topic-slug · NN / NN` muted right.
 
-**Default style**: Custom editorial (NOT neumorphism). Warm cream paper background, generous whitespace, restrained shadows, ink typography. Minimal divider lines instead of card outlines.
+**Default style**: Custom editorial (NOT neumorphism). Paper ground, generous whitespace, restrained shadows, Ink typography. Minimal Line rules instead of card outlines.
 
 **Phone mockup specs (when used):**
-- iMessage user (the owner / viewer): `#007AFF` blue, RIGHT-aligned, `border-bottom-right-radius: 6px`
-- iMessage other party (Sunday / coach / etc.): `#E9E9EB` gray, LEFT-aligned, `border-bottom-left-radius: 6px`
-- Sunday avatar (when shown): `#800020` burgundy circle with cream "S" (official monogram SVG in the brand kit)
+- iMessage user (the owner / viewer): `#007AFF` blue, RIGHT-aligned, `border-bottom-right-radius: 6px` -- Apple's own UI colour, not a Sundayable token
+- iMessage other party (Sunday / coach / etc.): `#E9E9EB` gray, LEFT-aligned, `border-bottom-left-radius: 6px` -- Apple's own UI colour, not a Sundayable token
+- Sunday avatar (when shown): Ink `#1B2233` circle with a Paper "S" (official monogram SVG in the brand kit)
 
 **Operator profile series — fixed closing card (Sundayable IG @sundayable.ai):**
 
@@ -149,8 +156,8 @@ ones), the last card is ALWAYS this exact CTA, industry-unspecific:
 - Hero: `Sales,<br/><em class="emph" ...>decoded</em>.`
 - Lead: `Sundayable studies the operators who built modern sales. The math, the scripts, the discipline. Follow for more.`
 - CTA button: `Follow @sundayable.ai` linking to `https://instagram.com/sundayable.ai`
-- Background: dark ink (`var(--ink)`)
-- Italic emphasis color: `#FFB6C1` (lighter pink for contrast on dark)
+- Background: Night (`#0A0F1E`)
+- Emphasis on that dark card: Paper `#F5F3EE` at Gabarito 700 -- reversed, not tinted
 
 **Never use industry-specific language** ("real estate sales", "car sales", etc.) in this
 closing because the same closing must work across operators from different industries
@@ -522,7 +529,7 @@ For child elements that need horizontal centering, use `margin: 0 auto` with an 
 
 ### CRITICAL: Hero/lead vertical overlap
 
-Serif display fonts (Instrument Serif, DM Serif Display) at large sizes have descenders
+Serif and other high-contrast display faces at large sizes have descenders
 that extend BELOW the CSS line box when `line-height` is set tight (< 1.05). Combined with
 a small `margin-top` on the next element, this causes the lead paragraph to visually
 overlap the bottom of the hero.
@@ -549,7 +556,7 @@ text can shrink and wrap when the container has any layout pressure. A wordmark 
 
 ### CRITICAL: Italic emphasis text width
 
-Italic display fonts (DM Serif Display Italic, etc.) are typically 10-15% wider than
+Italic display faces are typically 10-15% wider than
 their upright counterparts. A phrase like "whole skill" in italic at 132px can grow to
 ~880px and barely fit (or overflow) a 904px container.
 
@@ -560,11 +567,15 @@ wraps mid-phrase ("who ever / lived"), it loses brand voice impact. Apply global
 em.emph {
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--burgundy);
+  color: var(--accent);
   font-weight: 400;
   white-space: nowrap;  /* mandatory */
 }
 ```
+
+`--accent` is whichever accent the chosen preset defines (CREAL yellow, Red Seal
+red). **Sundayable has no accent hue and no italic display face** — there, emphasis
+is Gabarito 700 in Ink, upright, and the `nowrap` rule still applies.
 
 The autofit script will shrink the hero font as needed to make the nowrap-italic fit.
 This trades font size (which still reads big) for visual integrity (the italic stays
@@ -875,7 +886,7 @@ For expert-level topics: define the term once in simple language, then use the s
     `flex-shrink: 0`.
 11. **External image references (relative path or URL)** -- breaks PNG capture.
     Always inline images as base64 data URIs (resize to ~640px first).
-12. **Italic emphasis on long phrases without `nowrap`** -- DM Serif Display Italic
+12. **Italic emphasis on long phrases without `nowrap`** -- an italic display face
     is 10-15% wider than upright. Add `white-space: nowrap` and reduce hero font 5-10%.
 13. **iMessage chat with user on the LEFT** -- inverts iOS convention. The viewer
     expects to see "themselves" on the right (blue), other party on the left (gray).
